@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting to My New Website :)</title>
+
+    <script>
+        window.onload = function () {
+            const destination = window.location.href;
+            if (window.location.href.includes("ydai03.github.io")) {
+                const redirectLocation = window.location.href.replace(
+                    "ydai03.github.io",
+                    "yandaichn.github.io"
+                );
+                document.getElementById("body").innerHTML = "I have changed my homepage address to https://yandaichn.github.io/<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+        }
+    </script>
+</head>
+
+<body id="body">
+    I have changed my homepage address to <a href='https://yandaichn.github.io/'>https://yandaichn.github.io/</a>. Redirecting...
+</body>
+
+</html>
